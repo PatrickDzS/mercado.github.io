@@ -1,0 +1,30 @@
+
+/* estilo para o container */
+#container-tiraDuvidas{
+    width: 100%;
+    height: 100%;
+    margin-top: 230px;
+    
+}
+
+/* estilo para as peguntas*/
+.conteudo-perguntas{
+    width: 100%;
+    height: 100%;
+    margin: 130px 10px 40px 10px;
+    
+}
+
+/* estilo para deixar mais fluido os textos*/
+.conteudo-perguntas section h3 p{
+    width: 100%;
+    height: 100%;
+}
+
+/* estlo para o titulo */
+.titulos, h1{
+    margin: 10px 0px 10px 0px;
+    color: rgb(139, 63, 136);;
+
+}
+

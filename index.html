@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>MiniMercado</title>
+
+    <!--Estilo Custumizado-->
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+    <div id="container" class="clearfix"><!--Inicio do container-->
+
+        <header>
+
+            <div class="cabecalho"> <!--Inicio do cabecalho-->
+              
+                <div id="topo" class="clearfix">
+                    <a href="/index.html"><h1 class="logo">Mini Mercado</h1></a> 
+                </div>
+                 
+                <div id="sacola" class="clearfix"><!--Inio do icone da sacola-->
+                    <img class="img-sacola" src="./imagens/sacola-de-compras.png" alt="">
+                </div><!--Final icone da sacola-->
+
+
+                <div id="botao-pesquisar" class="input-group"> <!--Botao de pesquisar-->
+                    <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+
+                    <button class="btn btn-light ml-1" type="submit">
+                        <a href="./index.html"><img src="./imagens/lupa.png" width="15px"></a>
+                    </button>
+                </div> <!--Botao de pesquisar-->
+
+
+                <div class="bem-vindo fw-bold"> <!--Inicio do Bem-vindo-->
+                    <p>Bem-vindo</p>
+                    <a class="text-decoration-underline" href="cadastro.html">
+                        <p class="cadastre">Entre ou Cadatre-se</p>
+                    </a>
+                </div> <!--Final do Bem-vindo--> 
+
+            </div>
+
+            <div class="menu"> <!--Inicio do menu de categorias-->
+                <nav>
+                    <ul class="list-unstyled list-inline"> <!-- Inicio da lista -->
+                        <li class="list-inline-item fw-bold"><a href="#">Hortifruti</a></li>
+                        <li class="list-inline-item fw-bold"><a href="#">Produtos Alimentícios</a></li>
+                        <li class="list-inline-item fw-bold"><a href="#">Produtos de Higiene</a></li>
+                        <li class="list-inline-item fw-bold"><a href="#">Eletronicos</a></li>
+                        <li class="list-inline-item fw-bold"><a href="#">Carros</a></li>
+                    </ul> <!-- Final da lista -->
+                </nav>
+            </div> <!--Inicio do menu de categorias-->
+
+        </header>
+
+
+
+        <div id="conteudo" class="clearfix"><!--Inicio do conteudo-->
+
+            <div id="carousel" class="carousel slide" data-bs-interval="1000" data-bs-ride="carousel"> <!-- Inicio do carousel -->
+                <div class="carousel-inner"> <!-- Inner -->
+
+                    <div class="carousel-item active">
+                        <img src="./imagens/arroz.png" class="img-fluid">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./imagens/feijao.png" class="img-fluid">
+                    </div>
+
+                    <!--controles carousel-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                    
+
+                </div>
+
+                <!--Conmtroles-->
+
+
+            </div> <!-- Final do carousel -->
+
+            <div class="categorias-container">
+
+                <div class="hortifruti" class="clearfix"><!--inicio do dos conteudo da categoria hortifruti-->
+
+                    <div class="categorias"> <!--Inicio produto Maca-->
+                        <h4>Maça</h4>
+                        <img class="imagemProduto" src="./imagens/maca.png" width="30%"
+                            alt="Imagem de uma maçã vermelha brilhante, destacando sua casca lisa e aparência suculenta">
+                        <article class="artigoTexto">
+                            <p class="text-md-left">Nossa maçã é selecionada diretamente dos melhores produtores, garantindo
+                                sempre frescor e
+                                alta
+                                qualidade. Com uma textura crocante e um sabor naturalmente doce e equilibrado, essa maçã é
+                                perfeita para consumir in natura, preparar sucos, ou utilizar em receitas.</p>
+                            <p class="fw-bold valor valor1">R$ 6,90 kg</p>
+                        </article>
+                    </div> <!--Final produto Maca-->
+    
+                    <div class="categorias"> <!--Inicio produto Alface-->
+                        <h4>Alface</h4>
+                        <img class="imagemProduto" src="./imagens/alface.png" width="30%"
+                            alt="Imagem de um pé de alface fresco, com folhas verdes e vibrantes, destacando a textura e o frescor da hortaliça.">
+                        <article class="artigoTexto">
+                            <p class="text-md-left">Nossa alface é cultivada com cuidado e colhida no ponto ideal de frescor
+                                para garantir uma
+                                salada
+                                saudável e deliciosa. Com folhas crocantes e vibrantes, a alface é a base perfeita para
+                                saladas.</p>
+                            <p class="fw-bold valor2">R$ 3,90 Un</p>
+                        </article>
+                    </div> <!--Final produto Alface-->
+                </div><!--Final do conteudo da categoria hortifruti-->
+    
+                <div class="produtosAlimenticios"><!--inicio do dos conteudo da produtos alimenticios-->
+
+                    <div class="categorias" class="categorias"><!--Inicio do produto arroz-->
+                        <h4>Arroz</h4>
+                        <img class="imagemProduto" src="./imagens/arroz.png" width="30%"
+                            alt="Imagem de um saco de arroz em embalagem transparente, destacando os grãos.">
+                        <article class="artigoTexto">
+                            <p class="text-md-left">Nosso arroz é cuidadosamente selecionado para garantir grãos inteiros,
+                                soltinhos e saborosos
+                                em
+                                cada refeição. Ideal para o preparo de pratos tradicionais e contemporâneos, ele é versátil,
+                                fácil de cozinhar e uma excelente fonte de energia</p>
+                            <p class="fw-bold valor2">R$ 7,80 Kg</p>
+                        </article>
+                    </div><!--Final do produto arroz-->
+    
+                    <div class="categorias2 clearfix"><!--Inicio do produto feijao-->
+                        <h4>Feijao</h4>
+                        <img class="imagemProduto" src="./imagens/feijao.png" width="30%"
+                            alt="Uma imagem de alta qualidade mostrando um saco de feijão ">
+                        <article class="artigoTexto">
+                            <p class="text-md-left">O Feijão Preto é um clássico da culinária brasileira, especialmente
+                                conhecido por seu uso em
+                                receitas tradicionais como a feijoada. Rico em proteínas, fibras e minerais como ferro e
+                                cálcio,
+                                é uma ótima opção para quem busca uma refeição nutritiva e saborosa.</p>
+                            <p class="fw-bold valor1">R$ 10,99 Kg</p>
+                        </article>
+                    </div><!--Final do produto feijao-->
+
+                </div><!--Final do conteudo de produtos alimenticios-->
+    
+                <div class="categorias2 clearfix"><!--Inicio do conteudo de produtos de higieni-->
+
+                    <h4>Pasta de Dente</h4><!--Inicio do produto pasta de dente-->
+                    <img class="imagemProduto" src="./imagens/pastaDeDente.png" width="30%"
+                        alt="Imagem de uma pasta de dente em tubo, com um bico aplicador, mostrando a embalagem colorida e a pasta na ponta do tubo, pronta para uso.">
+                    <article class="artigoTexto">
+                        <p class="text-md-left">A Pasta de Dente Colgate é sinônimo de cuidado bucal completo. Sua
+                            fórmula com flúor ajuda a
+                            fortalecer os dentes, prevenindo a formação de cáries e garantindo uma limpeza profunda.</p>
+                        <p class="fw-bold valor2">R$ 5,99 Un</p>
+                    </article>
+                </div><!--Final do produto pasta de dente-->
+    
+                <div class="categorias2 clearfix"><!--Inicio do produto escova de dente-->
+                    <h4>Escova de Dente</h4>
+                    <img class="imagemProduto" src="./imagens/escovaDeDente.png" width="30%"
+                        alt="Imagem de uma escova de dente, com cerdas macias e um design moderno, destacando sua cor vibrante e formato ergonômico.">
+                    <article class="artigoTexto">
+                        <p class="text-md-left">A Escova de Dentes Colgate Macia oferece uma limpeza eficiente e suave
+                            para os dentes e
+                            gengivas.
+                            Com cerdas macias e de pontas arredondadas, ela remove a placa bacteriana de maneira
+                            delicada,
+                            alcançando até as áreas mais difíceis da boca..</p>
+                        <p class="fw-bold valor1">R$ 3,99 Un</p>
+                    </article><!--Final do produto pasta de dente-->
+                </div>
+    
+            </div>
+            
+        </div><!--Final do conteudo -->
+
+
+
+        <footer class="clearfix"><!--Inicio do rodape-->
+            <div class="menu-footer"><!--menu do footer-->
+                <p>
+                    <a href="./index.html">Home</a>
+                    <a href="./contato.html">Contato</a>
+                    <a href="./privacidade.html">Privacidade</a>
+                    <a href="./tiraDuvidas.html">Tire Dúvidas</a>
+                </p>
+            </div><!--menu do footer-->
+
+            <div class="horarios"><!--Horario de funcionamento-->
+                <p>Horário de atendimento</p>
+                <p>De segunda a domingo, das 08h às 21h</p>
+            </div><!--Horario de funcionamento-->
+
+            <p class="copyright">&#169; MiniMercado 2024 - Todos os direitos reservados</p><!--copyright-->
+        </footer> <!--Final do rodape-->
+
+
+    </div> <!--Final do container-->
+
+   
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
